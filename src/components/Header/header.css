@@ -1,0 +1,26 @@
+p{
+    margin: 0;
+}
+.header {
+    width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.space{
+    flex-grow: 1;
+}
+
+.title {
+    height: min-content;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    font-style: normal;
+    color: #323232;
+
+    margin: 0 42px;
+}

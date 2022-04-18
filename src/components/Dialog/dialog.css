@@ -1,0 +1,99 @@
+.modal {
+    display: block; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+    background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+    height: max-content;
+    background-color: #fefefe;
+    padding: 16px;
+    width: 1080px; /* Может быть больше или меньше, в зависимости от размера экрана */
+
+    border-radius: 12px;
+    margin: 15% auto;
+}
+
+.modal-content-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    min-height: 80px;
+}
+
+.modal-space {
+    flex-grow: 1;
+}
+
+.header-text {
+    margin-left: 48px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #323232;
+}
+
+.close svg:hover {
+    cursor: pointer;
+}
+
+.close:hover svg circle {
+    stroke: #ea0c0c;
+}
+
+.close:hover svg rect {
+    fill: #ea0c0c;
+}
+
+.inputField {
+    width: 1068px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.input-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    min-height: 80px;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    padding: 0;
+    border: 1px solid #3D82EB;
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    width: 90px;
+
+    color: #3D82EB;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+button:hover{
+    color: #1368ea;
+    border-color: #1368ea;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}

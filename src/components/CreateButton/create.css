@@ -1,0 +1,42 @@
+.create_wrapper {
+    width: 1080px;
+    min-height: 90px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.plus {
+    padding: 0 7px;
+}
+
+.create_text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #3D82EB;
+
+    margin-left: 48px;
+}
+
+.clickable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+
+    cursor: pointer;
+}
+
+.clickable:hover .create_text {
+    color: #1368ea;
+}
+
+.clickable:hover svg circle {
+    stroke: #1368ea;
+}
+
+.clickable:hover svg rect {
+    fill: #1368ea;
+}

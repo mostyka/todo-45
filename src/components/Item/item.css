@@ -1,0 +1,78 @@
+p {
+    margin: 0;
+}
+
+.item {
+    width: 1080px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 90px;
+
+    border-radius: 15px;
+
+    margin: 0 auto;
+}
+
+.item:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.item:hover .remove {
+    display: block;
+}
+
+.item_space {
+    flex-grow: 1;
+}
+
+.choose {
+    width: 50px;
+    cursor: pointer;
+}
+
+.choose:hover svg circle {
+    stroke: #969696;
+}
+
+.choose:hover .completed_svg circle {
+    stroke: #969696;
+    fill: #969696;
+}
+
+.remove {
+    display: none;
+    width: 78px;
+    cursor: pointer;
+}
+
+.remove:hover svg circle {
+    stroke: #ea0c0c;
+}
+
+.remove:hover svg rect {
+    fill: #ea0c0c;
+}
+
+.content {
+    margin-left: 48px;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    overflow-wrap: anywhere;
+    text-align: left;
+    margin-right: 54px;
+}
+
+.item:hover .content{
+    margin-right: 0;
+}
+
+.line {
+    width: inherit;
+    position:relative;
+    top: -20px;
+    border-bottom:4px #4E4E4E solid; /* цвет зачеркивающей линии */
+    display:block;
+}
